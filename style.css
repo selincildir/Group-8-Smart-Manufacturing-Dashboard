@@ -1,0 +1,184 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50; 
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Heading Styles */
+h2 {
+    color: #4CAF50; 
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Styles */
+form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+
+input[type="text"], input[type="password"], input[type="date"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
+    border-color: #4CAF50; 
+    outline: none;
+    background-color: #fff;
+}
+
+input[type="float"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+input[type="float"]:focus {
+    border-color: #4CAF50; 
+    outline: none;
+    background-color: #fff;
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+/* Links and Action Buttons */
+a {
+    text-decoration: none;
+    color: #4CAF50; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Action Buttons */
+.actions a {
+    padding: 8px 16px;
+    background-color: #4CAF50; 
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.actions a:hover {
+    background-color: #45a049; 
+}
+
+/* Layout Adjustments for Mobile */
+@media screen and (max-width: 768px) {
+    table, tr, th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    tr {
+        margin-bottom: 10px;
+    }
+
+    th, td {
+        text-align: right;
+    }
+
+    th::before, td::before {
+        float: left;
+        font-weight: bold;
+    }
+
+    th {
+        background-color: transparent;
+        color: #333; 
+    }
+}
+
+/* Form Input Consistency */
+.form-input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0; 
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Submit Button Consistency */
+.form-submit {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #45a049; 
+}
+
